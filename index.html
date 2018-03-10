@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Disney Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="col-12">
+        <img src="assets/images/disneyHeader.jpg" class="headerImage" alt="header">
+    </header>
+    <!-- Opening Page -->
+    <div class="startPage" id="startPg">
+        <img class = "background" src="assets/images/startWallpaper.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                        <button type="button" class="btn btn-warning startButton" onclick="showGamePg()" id="startBttn">
+                        START
+                    </button>
+                </div>
+            </div>    
+        </div> 
+    </div>
+    <!-- Game Page -->
+    <div class="gamePage" id="gamePg">
+        <div class="container mainGame">
+            <div class="row questionContainer col-12" id="question">
+            </div>
+            <div class="row timerContainer col-4" id="timer">
+            </div>
+            <div class="row answersContainer col-4" id="answers">
+            </div>
+            <div class = "row messageContainer col-4" id="message">
+            </div>
+            <div class="row captionContainer col-4" id="caption">
+            </div>
+            <div class="row imageContainer col-4" id="image">
+            </div>
+        </div>
+    </div>
+    <!-- Results Page -->
+    <div class="resultsPage" id="resultsPg">
+        <div class="container">
+            <div class="row" id="correct">
+            </div>
+            <div class="row" id="incorrect">
+            </div>
+            <div class="row" id="unanswered">
+            </div>
+            <div class="row" id="reset">
+                <button onclick="game.restartGame()" class="btn btn-primary">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
